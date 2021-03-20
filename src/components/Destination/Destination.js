@@ -17,7 +17,7 @@ const Destination = () => {
     }, []);
     const {riderType} = useParams();
 
-    const result = rider.filter(vehicle => vehicle.riderType == riderType);
+    const result = rider.filter(vehicle => vehicle.riderType === riderType);
     console.log(rider)
     console.log(result[0])
     console.log(riderType)

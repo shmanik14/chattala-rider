@@ -9,7 +9,6 @@ import { useHistory } from 'react-router-dom';
 
 const Book = () => {
     const {riderType} = useParams();
-    const history = useHistory()
     
     return (
         <div className="common">

@@ -6,7 +6,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { useContext } from 'react';
 import { riderContext } from '../../App';
-import { useState } from 'react';
 
 const Header = () => {
     const [loggedInUser , setLoggedInUser] = useContext(riderContext);

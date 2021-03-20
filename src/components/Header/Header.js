@@ -8,7 +8,7 @@ import { useContext } from 'react';
 import { riderContext } from '../../App';
 
 const Header = () => {
-    const [loggedInUser , setLoggedInUser] = useContext(riderContext);
+    const [loggedInUser] = useContext(riderContext);
     
     return (
         <header className="header">

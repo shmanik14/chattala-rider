@@ -10,9 +10,7 @@ import { useHistory } from 'react-router-dom';
 const Book = () => {
     const {riderType} = useParams();
     const history = useHistory()
-    const handleBook = (riderType) => {
-        history.push(`/book/${riderType}`);
-    }
+    
     return (
         <div className="common">
             <Container>

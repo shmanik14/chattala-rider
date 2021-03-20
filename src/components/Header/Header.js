@@ -10,7 +10,6 @@ import { useState } from 'react';
 
 const Header = () => {
     const [loggedInUser , setLoggedInUser] = useContext(riderContext);
-    const [loguser, setLoguser] = useState(false);
     
     return (
         <header className="header">

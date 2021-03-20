@@ -8,7 +8,7 @@ export default function Rider({rider}){
   // const {title, img, type} = props.rider;
   const history = useHistory()
     const handleBook = (riderType) => {
-        history.push(`/book/${riderType}`);
+        history.push(`/destination/${riderType}`);
     }
   return (
     <Col xs={12} md={3}>

@@ -32,15 +32,15 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
-            <PrivateRoute path="/book/:riderType">
+            <PrivateRoute path="/destination/:riderType">
               <Book />
             </PrivateRoute>
-            <PrivateRoute path="/destination/:riderType">
+            <PrivateRoute path="/search-result/:riderType">
               <Destination />
-            </PrivateRoute>             
+            </PrivateRoute> 
             <PrivateRoute path="/destination">
               <Home />
-            </PrivateRoute>            
+            </PrivateRoute>           
             <Route path="/blog">
               <Blog />
             </Route>            

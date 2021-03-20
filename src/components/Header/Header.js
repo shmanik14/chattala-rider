@@ -8,13 +8,13 @@ import { useContext } from 'react';
 import { riderContext } from '../../App';
 
 const Header = () => {
-    const [loggedInUser] = useContext(riderContext);
+    const [loggedInUser, setLoggedInUser] = useContext(riderContext);
     
     return (
         <header className="header">
         <Container>
             <Navbar collapseOnSelect expand="lg">
-                <Navbar.Brand>Municipal Riders</Navbar.Brand>
+                <Navbar.Brand>Chattala Riders</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">

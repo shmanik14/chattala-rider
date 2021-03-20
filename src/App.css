@@ -20,7 +20,8 @@
   border-radius: 10px;
   -webkit-box-shadow: 0px 20px 60px -30px rgb(0 0 0 / 60%);
     -moz-box-shadow: 0px 20px 60px -30px rgba(0,0,0,.6);
-    box-shadow: 0px 20px 60px -30px rgb(0 0 0 / 60%);
+  box-shadow: 0px 20px 60px -30px rgb(0 0 0 / 60%);
+  margin-bottom: 20px;
 }
 img.card-img-top {
   width: 50%;
@@ -33,7 +34,7 @@ img.card-img-top {
 }
 .common{
   padding-top: 100px;
-  text-align: center;
+  /* text-align: center; */
 }
 .login {
   border: 1px solid #ebdfdf;
@@ -71,6 +72,9 @@ button.login-btn span {
   font-weight: 700;
   font-size: 16px;
 }
+.search-ride h4{
+  text-transform: capitalize;
+}
 .rider-btn {
   margin-top: 30px;
   padding: 10px 30px;
@@ -79,6 +83,8 @@ button.login-btn span {
   border-radius: 5px;
   border: none;
   color: #fff;
+  text-transform: capitalize;
+  font-weight: 700;
 }
 .search-result ul{
   margin: 0;
@@ -90,12 +96,28 @@ button.login-btn span {
   background-color: #fff;
   margin-bottom: 10px;
   padding: 10px;
+  text-align: center;
 }
-.search-result ul li img.image{
+.search-result ul li img,
+.search-result h4 img{
+  width: 40px;
+}
+.search-result ul li img{
   position: absolute;
   left: 15%; 
 }
-.search-result ul li span.price{
+.search-result ul li span{
   position: absolute;
   right: 15%; 
+}
+.destination{
+  background-color: #e94607;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.destination p{
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
 }

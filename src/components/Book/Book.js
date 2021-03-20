@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import mapImage from '../../images/Map.png'
-import { useHistory } from 'react-router-dom';
 
 
 const Book = () => {

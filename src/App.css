@@ -1,38 +1,101 @@
-.App {
+.header{
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  left: 0;
+}
+.riders{
+  text-align: center;
+  background: url(./images/Bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  padding: 200px 0 300px;
+}
+.card {
+  padding-top: 30px;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 20px 60px -30px rgb(0 0 0 / 60%);
+    -moz-box-shadow: 0px 20px 60px -30px rgba(0,0,0,.6);
+    box-shadow: 0px 20px 60px -30px rgb(0 0 0 / 60%);
+}
+img.card-img-top {
+  width: 50%;
+  margin: 0 auto;
+  height: 100px;
+}
+.card-title {
+  margin-bottom: .75rem;
+  cursor: pointer;
+}
+.common{
+  padding-top: 100px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login {
+  border: 1px solid #ebdfdf;
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-btn{
+  border: 1px solid #ebdfdf;
+  background-color: transparent;
+  padding: 5px 20px;
+  border-radius: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button.login-btn span {
+  position: absolute;
+  left: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.search-ride,.search-result{
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 40px 25px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-ride input {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+.search-ride label{
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+}
+.rider-btn {
+  margin-top: 30px;
+  padding: 10px 30px;
+  background-color: #e94607;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+.search-result ul{
+  margin: 0;
+  padding: 0;
+}
+.search-result ul li{
+  list-style: none;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.search-result ul li img.image{
+  position: absolute;
+  left: 15%; 
+}
+.search-result ul li span.price{
+  position: absolute;
+  right: 15%; 
 }

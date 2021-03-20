@@ -1,0 +1,12 @@
+.ml-auto.navbar-nav a {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 15px;
+    color: #000;
+    text-transform: capitalize;
+}
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    font-weight: 700;
+    font-size: 35px;
+}

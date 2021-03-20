@@ -37,6 +37,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/destination/:riderType">
               <Destination />
+            </PrivateRoute>             
+            <PrivateRoute path="/destination">
+              <Home />
             </PrivateRoute>            
             <Route path="/blog">
               <Blog />

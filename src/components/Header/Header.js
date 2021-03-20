@@ -16,7 +16,7 @@ const Header = () => {
         <header className="header">
         <Container>
             <Navbar collapseOnSelect expand="lg">
-                <Navbar.Brand>Urban Rider</Navbar.Brand>
+                <Navbar.Brand>Municipal Riders</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
@@ -24,8 +24,8 @@ const Header = () => {
                         <Link to="/destination">Destination</Link>
                         <Link to="/blog">Blog</Link>
                         <Link to="/contact">Contact</Link>
-                        {!loguser && <Link to="/login">Login</Link>}
-                        {loguser && loggedInUser.name}
+                        <Link to="/login">Login</Link>
+                        {loggedInUser && loggedInUser.name}
                         
                     </Nav>
                 </Navbar.Collapse>

@@ -6,17 +6,19 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import mapImage from '../../images/Map.png'
+import fakeData from '../../data/data.json'
 
 const Destination = () => {
     const [rider,setRider] = useState([]);
     useEffect(() => {
-        fetch('../../data/data.json')
-          .then((res) => res.json())
+        fetch({fakeData})
+          .then((res) => res)
           .then(data => setRider(data))
-      }, []);
+    }, []);
     const {riderType} = useParams();
 
-    const result = rider.filter(vehicle => vehicle.riderType === riderType);
+    const result = rider.filter(vehicle => vehicle.riderType == riderType);
+    console.log(rider)
     console.log(result[0])
     console.log(riderType)
 

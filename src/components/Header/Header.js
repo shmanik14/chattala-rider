@@ -23,7 +23,7 @@ const Header = () => {
                         <Link to="/blog">Blog</Link>
                         <Link to="/contact">Contact</Link>
                         <Link to="/login">Login</Link>
-                        {loggedInUser && loggedInUser.name}
+                        <span>{loggedInUser && loggedInUser.name}</span>
                         
                     </Nav>
                 </Navbar.Collapse>

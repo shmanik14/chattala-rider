@@ -16,13 +16,13 @@ const Destination = () => {
     console.log(result)
     const {img, title,capacity, price} = result;
     const containerStyle = {
-        width: '400px',
-        height: '400px'
+        width: '100%',
+        height: '500px'
       };
       
       const center = {
-        lat: -3.745,
-        lng: -38.523
+        lat: 22.951754,
+        lng: 91.464443
       };
 
     return (

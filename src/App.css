@@ -3,10 +3,15 @@
   z-index: 999;
   right: 0;
   left: 0;
+  background-color: rgba(0,0,0,.7);
+}
+.navbar-nav span {
+  color: #fff;
+  font-weight: 600;
 }
 .riders{
   text-align: center;
-  background: url(./images/Bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(./images/Bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

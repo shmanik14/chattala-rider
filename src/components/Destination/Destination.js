@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import { useParams } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -14,6 +15,15 @@ const Destination = () => {
     let result = fakeData.find(vehicle => vehicle.riderType === riderType);
     console.log(result)
     const {img, title,capacity, price} = result;
+    const containerStyle = {
+        width: '400px',
+        height: '400px'
+      };
+      
+      const center = {
+        lat: -3.745,
+        lng: -38.523
+      };
 
     return (
         <div className="common">
@@ -33,15 +43,24 @@ const Destination = () => {
                             <li><img src={img} alt=""/>  {title} <FontAwesomeIcon icon={faUserFriends} /> {capacity} <span>${price}</span></li>
                             </ul>
                             <ul>
-                                {/* <li><img className="image" src={img} alt="" width="40px"/><span>{title}</span> <span>{capacity}</span><span className="price">$ {price}</span> </li> */}
-                                {/* <li><img className="image" src={result[0].img} alt="" width="40px"/><span>{result[0].title}</span> <span>{result[0].capacity}</span><span className="price">$ {result[0].price}</span> </li>
-                                <li><img className="image" src={result[0].img} alt="" width="40px"/><span>{result[0].title}</span> <span>{result[0].capacity}</span><span className="price">$ {result[0].price}</span> </li> */}
                             </ul>
                         </div>
                     </Col>
                     <Col xs={12} md={8}>
                         <div>
-                            <img src={mapImage} alt=""/>
+                        <LoadScript
+                            googleMapsApiKey="AIzaSyADfaOM4xCTYBzK3cHSDU5d9ip-68KSJ60"
+                        >
+                            <GoogleMap
+                            mapContainerStyle={containerStyle}
+                            center={center}
+                            zoom={10}
+                            >
+                            { /* Child components, such as markers, info windows, etc. */ }
+                            <></>
+                            </GoogleMap>
+                        </LoadScript>
+                            {/* <img src={mapImage} alt=""/> */}
                         </div>
                     </Col>
                 </Row>

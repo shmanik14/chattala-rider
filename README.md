@@ -11,7 +11,7 @@ Features
 4. User can login using Google and facebook.
 5. After login show the logged in user name in header section. User can set the place and date for query. Then show the related result.
 
-Front-end Technology: React Js, React Router, React Bootstrap
+Front-end Technology: React Js, React Router, React Bootstrap<br>
 Back-end Technology: Node Js, Express JS, MongoDB
 
 
